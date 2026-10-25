@@ -339,8 +339,8 @@ function segsOf(s) { const out = []; s.lines.forEach((l, ti) => sentencesOf(l[1]
 
 /* local progress (this browser only) */
 const store = {
-  get(k, d) { try { const v = localStorage.getItem("ll2:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
-  set(k, v) { try { localStorage.setItem("ll2:" + k, JSON.stringify(v)); } catch {} }
+  get(k, d) { try { const v = localStorage.getItem("fl1:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("fl1:" + k, JSON.stringify(v)); } catch {} }
 };
 let DONE = new Set(store.get("done", []));
 const markDone = n => { DONE.add(n); store.set("done", [...DONE]); renderProgress(); };
