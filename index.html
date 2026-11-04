@@ -312,7 +312,7 @@
 
     .books { background: var(--cream); color: var(--ink); }
     .books h2 { margin-bottom: 32px; }
-    @media (max-width: 760px) { .books h2 { text-align: center; } }
+    .books h2, .testimonials h2 { text-align: center; }
     .book-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; max-width: 880px; margin: 0 auto; }
     .book-grid .book { flex: 0 0 calc((100% - 4 * 18px) / 5); display: block; transition: transform .2s ease, box-shadow .2s ease; }
     .book-grid .book:hover, .book-grid .book:focus-visible { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(20,20,16,.12); }
