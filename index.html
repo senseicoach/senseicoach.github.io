@@ -19,6 +19,9 @@
   <meta property="og:image:alt" content="Executive Class, Ron Taylor: inglês para brasileiros no Canadá" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#201b14" />
+  <link rel="alternate" hreflang="pt-BR" href="https://executiveclass.ca/" />
+  <link rel="alternate" hreflang="en" href="https://executiveclass.ca/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://executiveclass.ca/" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
@@ -753,7 +756,7 @@
         </div>
         <div class="guarantee">
           <h3 data-i18n="guarTitle">Minha garantia</h3>
-          <p data-i18n="guarBody">Se você precisar parar a qualquer momento durante o seu curso, todas as aulas que ainda não foram dadas são reembolsadas integralmente, pelo valor de cada aula. Sem questionamentos.</p>
+          <p data-i18n="guarBody">Se você precisar parar a qualquer momento durante o seu curso, todas as aulas que ainda não foram dadas são reembolsadas integralmente, pelo valor de cada aula. Sem questionamentos. A única exceção é The Interview Sprint: se você conseguir um emprego antes do fim do curso, as aulas restantes passam para Your First 90 Days on the Job ou The Executive Class, em vez de serem reembolsadas.</p>
           <p class="guar-sign">— Ron Taylor</p>
         </div>
         <div class="pay-info">
@@ -787,11 +790,11 @@
           <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
           <div class="field">
             <label for="af-name" data-i18n="fieldName">Nome completo</label>
-            <input type="text" id="af-name" name="Name" required />
+            <input type="text" id="af-name" name="Name" autocomplete="name" required />
           </div>
           <div class="field">
             <label for="af-email" data-i18n="fieldEmail">E-mail</label>
-            <input type="email" id="af-email" name="email" required />
+            <input type="email" id="af-email" name="email" autocomplete="email" required />
           </div>
           <div class="field">
             <label for="af-residence" data-i18n="fieldResidence">Onde você mora hoje?</label>
@@ -801,6 +804,7 @@
               <option value="Canada" data-i18n="residenceCanada">No Canadá</option>
               <option value="Another country" data-i18n="residenceOther">Em outro país</option>
             </select>
+            <small class="pt-hint" style="font-size:12px;line-height:1.45;margin-top:6px">Payment is available only for students in Brazil and Canada. (O pagamento está disponível apenas para alunos no Brasil e no Canadá.)</small>
           </div>
           <div class="field">
             <label for="af-arrival" data-i18n="fieldArrival">Se ainda não mora no Canadá, quando pretende se mudar?</label>
@@ -940,11 +944,9 @@
         applyWa: "Prefere conversar antes?",
         applyWaLink: "Fale comigo no WhatsApp",
         applyWaNote: "Please correspond in English, as I do not speak Portuguese. (Por favor, escreva em inglês — eu não falo português.)",
-        pricesKicker: "Investimento",
         pbLead: "O Preboarding Assessment é o ponto de partida.",
         pbP1: "Durante a nossa avaliação de duas horas, preciso entender como você chegou até aqui — os desafios que enfrentou, as conquistas que alcançou e a experiência e o conhecimento que construiu ao longo da sua carreira.",
         pbP2: "Só então posso adaptar as suas aulas e traçar um plano de ação que aproveite o que você já sabe e a experiência que você traz na bagagem.",
-        pbP3: "Você sai com um plano de ação personalizado e a recomendação do curso ideal para você.",
         c5who: "Para quem vai estudar em um college ou universidade no Canadá.",
         c5body: "Entenda como o college e a universidade funcionam no Canadá antes de ter que aprender do jeito mais difícil. Você já tem uma boa formação e é um profissional experiente, mas ser estudante no Canadá significa aprender outro sistema acadêmico, em inglês. Quatro semanas de aulas individuais para você começar com tudo.",
         pr5n: "The University & College Prep Sprint",
@@ -954,7 +956,7 @@
         followTitle: "Depois do curso",
         followBody: "Ao terminar qualquer curso (exceto The Executive Class, que é um programa contínuo), você recebe três reuniões de acompanhamento, uma a cada mês nos três meses seguintes: 30 minutos, online, para falar dos desafios reais que você está enfrentando. Sem custo adicional.",
         guarTitle: "Minha garantia",
-        guarBody: "Se você precisar parar a qualquer momento durante o seu curso, todas as aulas que ainda não foram dadas são reembolsadas integralmente, pelo valor de cada aula. Sem questionamentos.",
+        guarBody: "Se você precisar parar a qualquer momento durante o seu curso, todas as aulas que ainda não foram dadas são reembolsadas integralmente, pelo valor de cada aula. Sem questionamentos. A única exceção é The Interview Sprint: se você conseguir um emprego antes do fim do curso, as aulas restantes passam para Your First 90 Days on the Job ou The Executive Class, em vez de serem reembolsadas.",
         pricesTitle: "Cursos e Investimento",
         priceNote: "Todos os cursos começam com o <strong>Preboarding Assessment</strong>: 2 horas, $100 CAD, creditado integralmente no valor do curso. Por exemplo, The Interview Sprint custa $240 no total: $100 no Preboarding Assessment e $140 ao iniciar o curso.",
         pricesNote: "Todos os valores estão em dólares canadenses (CAD), e todas as aulas são realizadas online, em formato individual e personalizado. Atenção: a taxa do Preboarding Assessment não é reembolsável; no entanto, o valor integral será creditado em qualquer curso em que você se matricular.",
@@ -1018,7 +1020,6 @@
         levelInter: "Intermediário — me sinto confortável em conversas do dia a dia",
         levelAdv: "Avançado — estou aprimorando a fluência para o trabalho",
         applySubmit: "Enviar inscrição",
-        testiKicker: "Depoimentos",
         waText: "Hi Ron, I saw your website and would like to know more about your courses.",
         testiTitle: "Depoimentos de pessoas como você!",
         ctaTitle: "Vamos começar a todo vapor?",
@@ -1091,11 +1092,9 @@
         applyWa: "Prefer to talk first?",
         applyWaLink: "Message me on WhatsApp",
         applyWaNote: "Please correspond in English, as I do not speak Portuguese.",
-        pricesKicker: "Fees",
         pbLead: "The Preboarding Assessment establishes the foundation.",
         pbP1: "During our two-hour assessment, I need to understand how you arrived at this point — the challenges you’ve faced, the successes you’ve achieved, and the experience and knowledge you’ve built throughout your career.",
         pbP2: "Only then can I tailor your lessons and design a game plan that capitalizes on what you already know and the experience you bring to the table.",
-        pbP3: "You’ll leave with a personalized action plan and a recommendation for the right course for you.",
         c5who: "For Brazilians preparing to study at a Canadian college or university.",
         c5body: "Learn how Canadian colleges and universities actually work before you have to learn the hard way. You are already well educated and an experienced professional, but becoming a Canadian student means learning a different academic system in English. Four weeks of one-on-one lessons to hit the ground running.",
         pr5n: "The University & College Prep Sprint",
@@ -1105,7 +1104,7 @@
         followTitle: "After your course",
         followBody: "When you finish any course (except The Executive Class, which is ongoing), you receive three follow-up meetings, one each month for the next three months: 30 minutes online to talk through the real challenges you are facing. At no extra cost.",
         guarTitle: "My guarantee",
-        guarBody: "If you need to stop at any point during your course, every lesson you haven’t taken yet is refunded in full, at the per-lesson rate. No questions asked.",
+        guarBody: "If you need to stop at any point during your course, every lesson you haven’t taken yet is refunded in full, at the per-lesson rate. No questions asked. The one exception is The Interview Sprint: if you land a job before the course ends, your remaining lessons carry over to Your First 90 Days on the Job or The Executive Class instead of being refunded.",
         pricesTitle: "Courses and Fees",
         priceNote: "Every course begins with the <strong>Preboarding Assessment</strong>: 2 hours, $100 CAD, fully credited toward your course. For example, The Interview Sprint costs $240 in total: $100 for the Preboarding Assessment and $140 when the course begins.",
         pricesNote: "All fees are listed in Canadian Dollars (CAD), and all lessons are conducted online in a personalized, one-on-one format. Please note that the Preboarding Assessment fee is non-refundable; however, the full amount will be credited toward any course you enroll in.",
@@ -1169,7 +1168,6 @@
         levelInter: "Intermediate — comfortable in everyday conversation",
         levelAdv: "Advanced — refining fluency for my career",
         applySubmit: "Send application",
-        testiKicker: "Testimonials",
         waText: "Hi Ron, I saw your website and would like to know more about your courses.",
         testiTitle: "Testimonials by people like you!",
         ctaTitle: "Are you ready to hit the ground running?",

@@ -5,6 +5,18 @@
 <meta name="description" content="Free Québécois French listening practice: 100 recorded conversations set in Montréal, from first words to NCLC 7, with transcription and sentence replay.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>French Listening Lab | Executive Class</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Executive Class">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="French Listening Lab gratuito · Executive Class">
+<meta property="og:description" content="Francês quebequense em Montreal, das primeiras palavras ao NCLC 7, para quem estuda francês com um professor. Gratuito, no seu ritmo.">
+<meta property="og:url" content="https://executiveclass.ca/french-lab/">
+<meta property="og:image" content="https://executiveclass.ca/french-lab/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://executiveclass.ca/french-lab/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -306,7 +318,7 @@ const PART_DESC = {"1": "NCLC 1–3 (A1–A2). Short, slow conversations for Luc
 const TEACHER_EMAIL = "executiveclass.ca@gmail.com";
 /* ===== RECORDINGS ===========================================================
    MP3 files live in the "audio" folder beside this page, named by script
-   number: audio/Story-001.mp3 ... audio/Story-100.mp3. Each script in BOOK has
+   number: audio/French-001.mp3 ... audio/French-100.mp3. Each script in BOOK has
    "t": the start and end time of every sentence, so students can replay one
    sentence at a time and follow the highlighted text in sync.
    If a recording is missing, the lab falls back to the device's voices.      */
@@ -328,8 +340,8 @@ function segsOf(s) { const out = []; s.lines.forEach((l, ti) => sentencesOf(l[1]
 
 /* local progress (this browser only) */
 const store = {
-  get(k, d) { try { const v = localStorage.getItem("ll2:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
-  set(k, v) { try { localStorage.setItem("ll2:" + k, JSON.stringify(v)); } catch {} }
+  get(k, d) { try { const v = localStorage.getItem("fl1:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("fl1:" + k, JSON.stringify(v)); } catch {} }
 };
 let DONE = new Set(store.get("done", []));
 const markDone = n => { DONE.add(n); store.set("done", [...DONE]); renderProgress(); };
@@ -385,7 +397,7 @@ function renderHome() {
   $("#view").innerHTML = `<section>
     <div class="hero">
       <h2>Québécois French, one conversation at a time</h2>
-      <p>These conversations follow Lucas and Camila, two Brazilians building a new life in Montréal: the apartment, the bank, the métro, work, school and the first winter. They are recorded with Québécois voices, a different one for each person.</p>
+      <p>These conversations follow Lucas and Camila, two Brazilians building a new life in Montréal: the apartment, the bank, the métro, work, school and the first winter. They are recorded with a different voice for each person.</p>
       <p>The lab goes from first words to the NCLC 7 listening level in three tiers. It is extra listening practice for learners who are studying French with a teacher. There are ${ALL.length} conversations: 30 in Tier 1, 35 in Tier 2 and 35 in Tier 3.</p>
       <div class="exchange dlg" data-part="1">
         <div class="turn P"><div class="who">Martin</div><div class="say">Bienvenue dans l'immeuble ! Tu viens d'où ?</div></div>
@@ -774,5 +786,7 @@ window.addEventListener("beforeunload", () => { if ("speechSynthesis" in window)
 renderProgress();
 route();
 </script>
+<p class="ec-home" style="margin:0;padding:28px 16px 36px;text-align:center;font:13px/1.5 system-ui,-apple-system,sans-serif;opacity:.75">A free resource from <a href="https://executiveclass.ca/" style="color:inherit">Executive Class</a> · Ron Taylor</p>
+<script data-goatcounter="https://executiveclass.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
