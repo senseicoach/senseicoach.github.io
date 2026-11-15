@@ -30,82 +30,154 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Executive Class",
-  "alternateName": "Executive Class · Ron Taylor",
-  "url": "https://executiveclass.ca/",
-  "logo": "https://executiveclass.ca/icon-512.png",
-  "image": "https://executiveclass.ca/og-image-3.jpg",
-  "description": "Aulas individuais de inglês para profissionais brasileiros: entrevistas, trabalho e vida no Canadá.",
-  "email": "executiveclass.ca@gmail.com",
-  "inLanguage": [
-    "pt-BR",
-    "en"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "CA"
-  },
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "Country",
-      "name": "Canada"
+      "@type": "EducationalOrganization",
+      "name": "Executive Class",
+      "alternateName": "Executive Class · Ron Taylor",
+      "url": "https://executiveclass.ca/",
+      "logo": "https://executiveclass.ca/icon-512.png",
+      "image": "https://executiveclass.ca/og-image-3.jpg",
+      "description": "Aulas individuais de inglês para profissionais brasileiros: entrevistas, trabalho e vida no Canadá.",
+      "email": "executiveclass.ca@gmail.com",
+      "inLanguage": [
+        "pt-BR",
+        "en"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Country",
+          "name": "Brazil"
+        }
+      ],
+      "founder": {
+        "@id": "https://executiveclass.ca/#ron-taylor"
+      },
+      "sameAs": [
+        "https://executiveclass.ca/ebooks/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cursos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Preboarding Assessment",
+            "price": "100",
+            "priceCurrency": "CAD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Testando as Águas",
+            "price": "425",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Testando as Águas",
+              "description": "5 dias · 2 horas de aula individual por dia",
+              "inLanguage": "en",
+              "provider": {
+                "@id": "https://executiveclass.ca/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "The Onboarding Sprint",
+            "price": "1475",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "The Onboarding Sprint",
+              "description": "4 semanas · 40 horas de aula individual (cinco aulas de 2 horas por semana)",
+              "inLanguage": "en",
+              "provider": {
+                "@id": "https://executiveclass.ca/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "The University & College Prep Sprint",
+            "price": "1475",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "The University & College Prep Sprint",
+              "description": "4 semanas · 40 horas de aula individual",
+              "inLanguage": "en",
+              "provider": {
+                "@id": "https://executiveclass.ca/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "The Interview Sprint",
+            "price": "240",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "The Interview Sprint",
+              "description": "2 semanas · 3 horas de aula individual por semana · foco em entrevistas de emprego",
+              "inLanguage": "en",
+              "provider": {
+                "@id": "https://executiveclass.ca/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Your First 90 Days on the Job",
+            "price": "520",
+            "priceCurrency": "CAD",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Your First 90 Days on the Job",
+              "description": "13 semanas · 1 hora de aula individual por semana",
+              "inLanguage": "en",
+              "provider": {
+                "@id": "https://executiveclass.ca/#organization"
+              }
+            }
+          }
+        ]
+      },
+      "@id": "https://executiveclass.ca/#organization"
     },
     {
-      "@type": "Country",
-      "name": "Brazil"
-    }
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Ron Taylor",
-    "jobTitle": "Canadian Communication Consultant"
-  },
-  "sameAs": [
-    "https://executiveclass.ca/ebooks/"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Cursos",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Preboarding Assessment",
-        "price": "100",
-        "priceCurrency": "CAD"
+      "@type": "Person",
+      "@id": "https://executiveclass.ca/#ron-taylor",
+      "name": "Ron Taylor",
+      "jobTitle": "Canadian Communication Consultant",
+      "url": "https://executiveclass.ca/",
+      "image": "https://executiveclass.ca/images/ron-taylor.webp",
+      "worksFor": {
+        "@id": "https://executiveclass.ca/#organization"
       },
-      {
-        "@type": "Offer",
-        "name": "Testando as Águas",
-        "price": "425",
-        "priceCurrency": "CAD"
-      },
-      {
-        "@type": "Offer",
-        "name": "The Onboarding Sprint",
-        "price": "1475",
-        "priceCurrency": "CAD"
-      },
-      {
-        "@type": "Offer",
-        "name": "The University & College Prep Sprint",
-        "price": "1475",
-        "priceCurrency": "CAD"
-      },
-      {
-        "@type": "Offer",
-        "name": "The Interview Sprint",
-        "price": "240",
-        "priceCurrency": "CAD"
-      },
-      {
-        "@type": "Offer",
-        "name": "Your First 90 Days on the Job",
-        "price": "520",
-        "priceCurrency": "CAD"
+      "sameAs": [
+        "https://www.linkedin.com/in/rontaylor-executiveclass/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://executiveclass.ca/#website",
+      "url": "https://executiveclass.ca/",
+      "name": "Executive Class",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://executiveclass.ca/#organization"
       }
-    ]
-  }
+    }
+  ]
 }
   </script>
   <link rel="preload" as="image" href="images/hero.webp" type="image/webp" />
@@ -322,6 +394,7 @@
     .books-all { text-align: center; margin: 28px 0 0; }
     .books-share { text-align: center; margin: 32px auto 0; max-width: 560px; font-size: 16px; color: var(--ink); }
     .books-share + .books-all { margin-top: 14px; }
+    .books-all + .books-all { margin-top: 16px; }
     .books-all a { color: var(--navy); font-weight: 500; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
     
     .book {
@@ -699,6 +772,7 @@
         </div>
         <p class="books-share" data-i18n="booksShare">Todos os livros e Listening Labs da biblioteca são gratuitos. Compartilhe com amigos que estão se mudando para o Canadá.</p>
         <p class="books-all"><a href="https://executiveclass.ca/ebooks/" target="_blank" rel="noopener" data-i18n="booksAll">EXPLORE A BIBLIOTECA GRATUITA DE RECURSOS →</a></p>
+        <p class="books-all"><a href="/dicas/" data-i18n="tipsAll">LEIA AS DICAS DA SEMANA →</a></p>
       </div>
     </section>
 
@@ -930,6 +1004,7 @@
         booksTitle: "Executive Class Library",
         booksShare: "Todos os livros e Listening Labs da biblioteca são gratuitos. Compartilhe com amigos que estão se mudando para o Canadá.",
         booksAll: "EXPLORE A BIBLIOTECA GRATUITA DE RECURSOS →",
+        tipsAll: "LEIA AS DICAS DA SEMANA →",
         navApply: "Inscreva-se",
         navCourses: "Investimento",
         viewPrices: "Ver cursos e valores",
@@ -1078,6 +1153,7 @@
         booksTitle: "Executive Class Library",
         booksShare: "Every book and Listening Lab in the library is free. Share them with friends who are moving to Canada.",
         booksAll: "EXPLORE THE FREE RESOURCE LIBRARY →",
+        tipsAll: "READ THE TIPS OF THE WEEK (IN PORTUGUESE) →",
         navApply: "Apply",
         navCourses: "Fees",
         viewPrices: "View courses & fees",
