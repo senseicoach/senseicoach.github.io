@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://executiveclass.ca/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://executiveclass.ca/ebooks/</loc>
@@ -119,5 +119,29 @@
   <url>
     <loc>https://executiveclass.ca/vocab-library/</loc>
     <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/avaliacao-de-ingles/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/comecando-do-zero/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/falsos-cognatos-na-entrevista/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/networking-antes-de-chegar/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://executiveclass.ca/dicas/primeiros-365-dias-no-canada/</loc>
+    <lastmod>2026-11-15</lastmod>
   </url>
 </urlset>
