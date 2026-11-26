@@ -378,7 +378,7 @@ function renderNav(filter = "") {
     html += `<details class="part" ${open ? "open" : ""}><summary><b>${p.part}</b><span>${esc(p.title)}</span><small>${items.length}</small></summary><ol>` +
       items.map(s => `<li><button data-script="${s.num}" ${s.num === cur ? 'aria-current="true"' : ''}><span>${s.num}</span><span>${esc(s.title)}</span><span class="ck">${DONE.has(s.num) ? "✓" : ""}</span></button></li>`).join("") + `</ol></details>`;
   });
-  if (!any) html += `<p class="empty">No conversations match “${esc(filter)}”. Try one word, like “bank” or “school”.</p>`;
+  if (!any) html += `<p class="empty">No conversations match “${esc(filter)}”. Try one word in French, like “banque” or “école”.</p>`;
   $("#nav").innerHTML = html;
   const c = $('nav [aria-current="true"]'); if (c && !f) c.scrollIntoView({ block: "nearest" });
 }
