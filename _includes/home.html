@@ -422,6 +422,8 @@
     .field-note { margin-top: 4px; font-size: 12.5px; line-height: 1.5; color: rgba(244,239,227,.62); font-style: italic; }
     .apply-form .btn { justify-self: center; margin-top: 6px; border: 0; cursor: pointer; }
     .apply-form .btn[disabled] { opacity: .6; cursor: wait; }
+    .privacy-note { margin-top: -8px; text-align: center; font-size: 12.5px; line-height: 1.5; color: rgba(244,239,227,.62); }
+    .privacy-note a { color: var(--gold-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
     .form-status { font-size: 15px; line-height: 1.5; color: var(--gold-soft); max-width: 60ch; }
 
     .cta {
@@ -915,6 +917,7 @@
             <input type="text" id="af-source" name="Referred by" placeholder="ex.: Ana Souza" data-i18n-placeholder="fieldSourcePh" />
           </div>
           <button type="submit" class="btn" data-i18n="applySubmit">Enviar inscrição</button>
+          <p class="privacy-note" data-i18n-html="applyPrivacy">Veja como eu uso os seus dados na <a href="/privacidade/{% if include.lang == "en" %}#english{% endif %}">política de privacidade</a>.</p>
           <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
@@ -925,7 +928,7 @@
   <footer class="wrap">
     <div>© 2026 Ron Taylor · Executive Class</div>
     <div class="footer-cities" data-i18n="footerCity">Canadá</div>
-    <div class="footer-contact"><a href="mailto:executiveclass.ca@gmail.com">executiveclass.ca@gmail.com</a> · <a href="https://wa.me/818039114334?text=Hi%20Ron%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20courses." target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.linkedin.com/in/rontaylor-executiveclass/" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div class="footer-contact"><a href="mailto:executiveclass.ca@gmail.com">executiveclass.ca@gmail.com</a> · <a href="https://wa.me/818039114334?text=Hi%20Ron%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20courses." target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.linkedin.com/in/rontaylor-executiveclass/" target="_blank" rel="noopener">LinkedIn</a> · <a href="/privacidade/{% if include.lang == "en" %}#english{% endif %}" data-i18n="footerPrivacy">Privacidade</a></div>
   </footer>
 
   <script>
@@ -1058,6 +1061,8 @@
         levelInter: "Intermediário — me sinto confortável em conversas do dia a dia",
         levelAdv: "Avançado — estou aprimorando a fluência para o trabalho",
         applySubmit: "Enviar inscrição",
+        applyPrivacy: 'Veja como eu uso os seus dados na <a href="/privacidade/">política de privacidade</a>.',
+        footerPrivacy: "Privacidade",
         waText: "Hi Ron, I saw your website and would like to know more about your courses.",
         testiTitle: "Depoimentos de pessoas como você!",
         ctaTitle: "Vamos começar a todo vapor?",
@@ -1200,6 +1205,8 @@
         levelInter: "Intermediate — comfortable in everyday conversation",
         levelAdv: "Advanced — refining fluency for my career",
         applySubmit: "Send application",
+        applyPrivacy: 'See how I use your information in the <a href="/privacidade/#english">privacy notice</a>.',
+        footerPrivacy: "Privacy",
         waText: "Hi Ron, I saw your website and would like to know more about your courses.",
         testiTitle: "Testimonials by people like you!",
         ctaTitle: "Are you ready to hit the ground running?",
